@@ -1,0 +1,37 @@
+﻿<Window x:Class="コンボボックスの選択値によって動的に検証ルールを変更させる.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:コンボボックスの選択値によって動的に検証ルールを変更させる"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Vertical">
+        <ComboBox
+            x:Name="deviceComboBox"
+            Width="200"
+            Height="30"
+            ItemsSource="{Binding DeviceModels}"
+            SelectedItem="{Binding SelectedDeviceModel}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBox
+            x:Name="deviceNumberTextBox"
+            Width="200"
+            Height="30"
+            Text="{Binding DeviceNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button
+            x:Name="executeButton"
+            Content="Execute"
+            Width="100"
+            Height="30"
+            Command="{Binding ExecuteCommand}"
+            Margin="5"
+            IsEnabled="{Binding CanExecute}"/>
+    </StackPanel>
+</Window>

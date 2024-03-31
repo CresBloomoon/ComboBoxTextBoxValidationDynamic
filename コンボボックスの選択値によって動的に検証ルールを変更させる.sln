@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "コンボボックスの選択値によって動的に検証ルールを変更させる", "コンボボックスの選択値によって動的に検証ルールを変更させる\コンボボックスの選択値によって動的に検証ルールを変更させる.csproj", "{48653B8F-B48C-4C56-8419-3311620C3DBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48653B8F-B48C-4C56-8419-3311620C3DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48653B8F-B48C-4C56-8419-3311620C3DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48653B8F-B48C-4C56-8419-3311620C3DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48653B8F-B48C-4C56-8419-3311620C3DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E340F4E-1C0A-4783-8EA9-D6B93E31300E}
+	EndGlobalSection
+EndGlobal
